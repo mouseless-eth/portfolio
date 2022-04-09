@@ -10,7 +10,7 @@ import Solidity from '../assets/techstack/solidity.png';
 const techstack = [
   {
     name: 'HardHat',
-    description: 'Ethereum development environment',
+    description: 'EVM dev environment',
     link: 'https://hardhat.org/',
     type: 'web3',
     image: HardHat,
@@ -24,28 +24,28 @@ const techstack = [
   },
   {
     name: 'Ethersjs',
-    description: 'Library for Blockchain interaction',
+    description: 'Blockchain interaction',
     link: 'https://docs.ethers.io/v5/',
     type: 'web3',
     image: Ethersjs,
   },
   {
     name: 'Solidity',
-    description: 'Smart contract scripting language',
+    description: 'Smart contract scripting',
     link: 'https://docs.soliditylang.org/en/v0.8.13/',
     type: 'web3',
     image: Solidity,
   },
   {
     name: 'Ganache',
-    description: 'Personal local blockchain for testing',
-    link: 'https://reactjs.org://trufflesuite.com/docs/ganache/',
+    description: 'Local blockchain for testing',
+    link: 'https://trufflesuite.com/docs/ganache/',
     type: 'web3',
     image: Ganache,
   },
   {
     name: 'FlashBots',
-    description: 'Send private bundled-transactions to miners',
+    description: 'Send private txs to miners',
     link: 'https://docs.flashbots.net/',
     type: 'web3',
     image: FlashBots,
