@@ -60,7 +60,7 @@ const techstack = [
   {
     name: 'JavaScript',
     description: 'Web development scripting',
-    link: 'https://reactjs.org://www.javascript.com/',
+    link: 'https://www.javascript.com/',
     type: 'web2',
     image: JavaScript,
   },
