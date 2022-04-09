@@ -1,6 +1,8 @@
 import * as React from 'react';
-import { Route, Switch, Redirect } from 'react-router-dom';
-import Home from './home';
+import { Route, Routes, Navigate } from 'react-router-dom';
+import Home from '../pages/home';
+import Web2 from '../pages/web2';
+import Web3 from '../pages/web3';
 // import EducationStory from './education-story';
 
 const routes = [
@@ -11,13 +13,13 @@ const routes = [
     component: Home,
   },
   {
-    path: '/about',
+    path: '/web2',
     exact: true,
     name: 'About',
     component: Web2,
   },
   {
-    path: '/achievements',
+    path: '/web3',
     exact: true,
     name: 'Achievements',
     component: Web3,
@@ -26,17 +28,17 @@ const routes = [
 
 function Navigation() {
   return (
-    <Switch>
+    <Routes>
       {routes.map((route, idx) => (
         <Route
           key={idx}
           exact={route.exact}
           path={route.path}
-          render={props => <route.component {...props} />}
+          render={(props) => <route.component {...props} />}
         />
       ))}
-      <Redirect to="/" />
-    </Switch>
+      <Route path="/" />
+    </Routes>
   );
 }
 

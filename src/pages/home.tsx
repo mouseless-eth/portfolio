@@ -16,24 +16,24 @@ import {
 import { AiTwotoneThunderbolt, AiOutlineCloudServer } from 'react-icons/ai';
 import { BiDesktop } from 'react-icons/bi';
 import { GiSpiderWeb } from 'react-icons/gi';
-import { skills } from '../data/data';
-import SkillCard from './skill-card';
-import Section from './section';
-import { PageSlideFade, container } from './page-transitions';
-import Header from './header';
-import { MotionBox } from './motion';
+import techstack from '../data/techstack';
+import SkillCard from '../components/skill-card';
+import Section from '../components/section';
+import { PageSlideFade, container } from '../components/page-transitions';
+import Header from '../components/header';
+import { MotionBox } from '../components/motion';
 
-function TechStack() {
-  const [skillsList, setSkillsList] = useState([]);
+function Home() {
+  const [techstackList, setSkillsList] = useState([]);
 
   React.useEffect(() => {
-    setSkillsList(skills);
+    setSkillsList(techstack);
   }, []);
 
   const filterSkills = (tab) => {
-    console.log(skills.filter((skill) => skill.type === tab));
-    if (tab.length) setSkillsList(skills.filter((skill) => skill.type === tab));
-    else setSkillsList(skills);
+    console.log(techstack.filter((skill) => skill.type === tab));
+    if (tab.length) setSkillsList(techstack.filter((skill) => skill.type === tab));
+    else setSkillsList(techstack);
   };
 
   return (
@@ -136,7 +136,7 @@ function TechStack() {
                   animate="visible"
                 >
                   <SimpleGrid columns={[1, 1, 2]} spacing={4} mt={8}>
-                    {skillsList.map((tool, index) => (
+                    {techstackList.map((tool, index) => (
                       <SkillCard
                         key={index}
                         name={tool.name}
@@ -156,7 +156,7 @@ function TechStack() {
                   animate="visible"
                 >
                   <SimpleGrid columns={[1, 2]} spacing={4} mt={8}>
-                    {skillsList.map((tool, index) => (
+                    {techstackList.map((tool, index) => (
                       <SkillCard
                         key={index}
                         name={tool.name}
@@ -176,7 +176,7 @@ function TechStack() {
                   animate="visible"
                 >
                   <SimpleGrid columns={[1, 2]} spacing={4} mt={8}>
-                    {skillsList.map((tool, index) => (
+                    {techstackList.map((tool, index) => (
                       <SkillCard
                         key={index}
                         name={tool.name}
@@ -196,7 +196,7 @@ function TechStack() {
                   animate="visible"
                 >
                   <SimpleGrid columns={[1, 2]} spacing={4} mt={8}>
-                    {skillsList.map((tool, index) => (
+                    {techstackList.map((tool, index) => (
                       <SkillCard
                         key={index}
                         name={tool.name}
@@ -217,4 +217,4 @@ function TechStack() {
   );
 }
 
-export default TechStack;
+export default Home;
