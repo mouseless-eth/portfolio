@@ -1,5 +1,9 @@
 import * as React from 'react';
-import { Route, Routes, Navigate } from 'react-router-dom';
+import {
+  BrowserRouter as Router,
+  Routes,
+  Route,
+} from 'react-router-dom';
 import Home from '../pages/home';
 import Web2 from '../pages/web2';
 import Web3 from '../pages/web3';
@@ -34,10 +38,9 @@ function Navigation() {
           key={idx}
           exact={route.exact}
           path={route.path}
-          render={(props) => <route.component {...props} />}
+          element={<route.component />}
         />
       ))}
-      <Route path="/" />
     </Routes>
   );
 }
