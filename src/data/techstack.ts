@@ -53,7 +53,7 @@ const techstack = [
   {
     name: 'TypeScript',
     description: 'Web development scripting',
-    link: 'https://reactjs.org/',
+    link: 'https://www.typescriptlang.org/',
     type: 'web2',
     image: TypeScript,
   },
