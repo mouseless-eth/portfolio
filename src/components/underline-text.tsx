@@ -1,0 +1,17 @@
+import { PropsWithChildren } from 'react';
+import { Box } from '@chakra-ui/react';
+
+interface Props {
+  color: string;
+  h?: string;
+  zIndex?: number;
+}
+function UnderlinedText(props: PropsWithChildren<Props>) {
+  return (
+    <Box as="span" display="inline-block" position="relative">
+      {props.children}
+      <Box as="span" display="block" position="absolute" bg="gray.200" w="100%" h={props.h || '1px'} bottom={-2} />
+    </Box>
+  );
+}
+export default UnderlinedText;
