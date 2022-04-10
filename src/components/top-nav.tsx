@@ -4,40 +4,27 @@ import {
   Flex,
   Avatar,
   HStack,
-  Button,
-  Text,
   Link,
   IconButton,
   useDisclosure,
   useColorModeValue,
-  Menu,
-  MenuButton,
-  MenuList,
-  MenuItem,
   Stack,
-  Icon,
 } from '@chakra-ui/react';
 import { NavLink as RouterNavLink } from 'react-router-dom';
 import { GiHamburgerMenu } from 'react-icons/gi';
-import { FaGithub } from 'react-icons/fa';
-import { BiChevronDown } from 'react-icons/bi';
-import { BsCheckCircle, BsBook } from 'react-icons/bs';
-import { MdTimeline } from 'react-icons/md';
-import { AiOutlineClose, AiTwotoneThunderbolt } from 'react-icons/ai';
+import { FaGithub, FaTwitter } from 'react-icons/fa';
+import { AiOutlineClose } from 'react-icons/ai';
 import ColorModeSwitcher from './ColorModeSwitcher';
 import UserIcon from '../assets/images/user_icon.png';
 
 const webLinks = [
-  { name: 'About', path: '/about' },
-  { name: 'Blog', path: '/blog' },
+  { name: 'Web3 Projects', path: '/web3' },
+  { name: 'Web2 Projects', path: '/web2' },
 ];
 
 const mobileLinks = [
-  { name: 'About', path: '/about' },
-  { name: 'Open Source', path: '/open-source' },
-  { name: 'Blog', path: '/blog' },
-  { name: 'Tech Stack', path: '/tech-stack' },
-  { name: 'Developer Story', path: '/story-timeline' },
+  { name: 'Web3 Projects', path: '/web3' },
+  { name: 'Web2 Projects', path: '/web2' },
 ];
 
 interface NavLinkProps {
@@ -77,11 +64,6 @@ function NavLink({
 function TopNav() {
   const { isOpen, onOpen, onClose } = useDisclosure();
 
-  const menuProps = {
-    bg: useColorModeValue('gray.200', 'gray.900'),
-    color: useColorModeValue('blue.500', 'blue.200'),
-  };
-
   return (
     <Box bg={useColorModeValue('white', 'gray.700')} px={4} boxShadow="lg">
       <Flex
@@ -104,13 +86,13 @@ function TopNav() {
             <Avatar
               as={Link}
               size="sm"
-              href="/portfolio"
+              href="/"
               src={UserIcon}
             />
           </Box>
           <HStack
             as="nav"
-            spacing={4}
+            spacing={3}
             display={{ base: 'none', md: 'flex' }}
           >
             {webLinks.map((link) => (
@@ -121,80 +103,24 @@ function TopNav() {
                 onClose={onClose}
               />
             ))}
-            <Menu isLazy>
-              <MenuButton
-                as={Button}
-                variant="ghost"
-                size="sm"
-                px={2}
-                py={1.5}
-                fontSize="1em"
-                rounded="md"
-                height="auto"
-                _hover={menuProps}
-                _expanded={menuProps}
-                _focus={{ boxShadow: 'outline' }}
-                rightIcon={<BiChevronDown size={18} />}
-              >
-                Links
-              </MenuButton>
-              <MenuList zIndex={5}>
-                <Link as={RouterNavLink} to="/tech-stack">
-                  <MenuItem>
-                    <HStack>
-                      <Icon
-                        as={AiTwotoneThunderbolt}
-                        size={18}
-                        color={useColorModeValue('blue.500', 'blue.200')}
-                      />
-                      <Text>Tech Stack</Text>
-                    </HStack>
-                  </MenuItem>
-                </Link>
-                <Link as={RouterNavLink} to="/open-source">
-                  <MenuItem>
-                    <HStack>
-                      <Icon
-                        as={BsBook}
-                        size={18}
-                        color={useColorModeValue('blue.500', 'blue.200')}
-                      />
-                      <Text>Open Source</Text>
-                    </HStack>
-                  </MenuItem>
-                </Link>
-                <Link as={RouterNavLink} to="/story-timeline">
-                  <MenuItem>
-                    <HStack>
-                      <Icon
-                        as={MdTimeline}
-                        size={18}
-                        color={useColorModeValue('blue.500', 'blue.200')}
-                      />
-                      <Text>Developer Story</Text>
-                    </HStack>
-                  </MenuItem>
-                </Link>
-                <Link as={RouterNavLink} to="/achievements">
-                  <MenuItem>
-                    <HStack>
-                      <Icon
-                        as={BsCheckCircle}
-                        size={18}
-                        color={useColorModeValue('blue.500', 'blue.200')}
-                      />
-                      <Text>Achievements</Text>
-                    </HStack>
-                  </MenuItem>
-                </Link>
-              </MenuList>
-            </Menu>
           </HStack>
         </HStack>
         <Flex alignItems="center">
           <IconButton
             as={Link}
-            href="https://github.com/MA-Ahmad"
+            href="https://twitter.com/0xMouseLessDev"
+            size="md"
+            icon={<FaTwitter />}
+            aria-label="Twitter account"
+            bg={useColorModeValue('white', 'gray.700')}
+            _hover={{
+              textDecoration: 'none',
+              bg: useColorModeValue('gray.200', 'gray.900'),
+            }}
+          />
+          <IconButton
+            as={Link}
+            href="https://github.com/0xMouseLess"
             size="md"
             icon={<FaGithub />}
             aria-label="Github account"
