@@ -13,7 +13,12 @@ import { usePalette } from 'react-palette';
 import { MotionBox } from './motion';
 import { item } from './page-transitions';
 
-function SkillCard({ name, image, link, description }) {
+function SkillCard({
+  name,
+  image,
+  link,
+  description,
+}) {
   const { data, loading } = usePalette(image);
 
   return (
@@ -50,7 +55,7 @@ function SkillCard({ name, image, link, description }) {
                 opacity={0.25}
               ></Box>
               {loading ? (
-                <Skeleton height={26} width={26} rounded='md' />
+                <Skeleton height={26} width={26} rounded="md" />
               ) : (
                 <Image
                   src={image}

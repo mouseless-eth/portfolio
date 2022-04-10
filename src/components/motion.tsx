@@ -31,7 +31,7 @@ export const MotionImage = motion(
   forwardRef((props, ref) => {
     const chakraProps = Object.fromEntries(
       // do not pass framer props to DOM element
-      Object.entries(props).filter(([key]) => !isValidMotionProp(key))
+      Object.entries(props).filter(([key]) => !isValidMotionProp(key)),
     );
     return (
       <Image

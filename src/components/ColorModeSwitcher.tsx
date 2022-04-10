@@ -26,7 +26,7 @@ function ColorModeSwitcher(props): React.FC<ColorModeSwitcherProps> {
       aria-label={`Switch to ${text} mode`}
       {...props}
     />
-  )
+  );
 }
 
 export default ColorModeSwitcher;

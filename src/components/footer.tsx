@@ -47,9 +47,9 @@ function Footer() {
           MouseLess
         </Text>
         <Box textAlign="center">
-          {siteConfig.author.accounts.map((sc, index) => (
+          {siteConfig.author.accounts.map((sc) => (
             <IconButton
-              key={index}
+              key={sc}
               as={Link}
               isExternal
               href={sc.url}
