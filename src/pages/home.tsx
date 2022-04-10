@@ -6,7 +6,7 @@ import {
   useColorModeValue,
   SimpleGrid,
 } from '@chakra-ui/react';
-import techstack from '../data/techstack';
+import techstack, { Skill } from '../data/techstack';
 import SkillCard from '../components/skill-card';
 import Section from '../components/section';
 import { PageSlideFade, container } from '../components/page-transitions';
@@ -14,7 +14,7 @@ import Header from '../components/header';
 import { MotionBox } from '../components/motion';
 
 function Home() {
-  const [techstackList, setSkillsList] = useState([]);
+  const [techstackList, setSkillsList] = useState<Skill[] | []>([]);
 
   React.useEffect(() => {
     setSkillsList(techstack);
@@ -46,9 +46,9 @@ function Home() {
             animate="visible"
           >
             <SimpleGrid columns={[1, 1, 2]} spacing={4} mt={8}>
-              {techstackList.map((tool, index) => (
+              {techstackList.map((tool: Skill) => (
                 <SkillCard
-                  key={index}
+                  key={tool}
                   name={tool.name}
                   description={tool.description}
                   image={tool.image}

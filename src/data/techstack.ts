@@ -7,7 +7,15 @@ import Ethersjs from '../assets/techstack/ethersjs.png';
 import FlashBots from '../assets/techstack/flashbots.png';
 import Solidity from '../assets/techstack/solidity.png';
 
-const techstack = [
+export interface Skill {
+  name: string,
+  description: string,
+  link: string,
+  type: string,
+  image: string,
+}
+
+const techstack: Skill[] = [
   {
     name: 'HardHat',
     description: 'EVM dev environment',
