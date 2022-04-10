@@ -49,12 +49,11 @@ function Footer() {
         <Box textAlign="center">
           {siteConfig.author.accounts.map((sc) => (
             <IconButton
-              key={sc}
+              key={sc.toString()}
               as={Link}
               isExternal
               href={sc.url}
               aria-label={sc.label}
-              size="lg"
               colorScheme={sc.type}
               icon={sc.icon}
               {...iconProps}

@@ -6,11 +6,16 @@ interface Props {
   h?: string;
   zIndex?: number;
 }
-function UnderlinedText(props: PropsWithChildren<Props>) {
+function UnderlinedText({
+  children,
+  color, // eslint-disable-line @typescript-eslint/no-unused-vars
+  h,
+  zIndex, // eslint-disable-line @typescript-eslint/no-unused-vars
+}: PropsWithChildren<Props>) {
   return (
     <Box as="span" display="inline-block" position="relative">
-      {props.children}
-      <Box as="span" display="block" position="absolute" bg="gray.200" w="100%" h={props.h || '1px'} bottom={-2} />
+      {children}
+      <Box as="span" display="block" position="absolute" bg="gray.200" w="100%" h={h || '1px'} bottom={-2} />
     </Box>
   );
 }

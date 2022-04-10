@@ -3,13 +3,13 @@ import { PropsWithChildren } from 'react';
 import UnderlinedText from './underline-text';
 
 interface Props extends BoxProps {
-  underlineColor: string;
+  underlineColor?: string;
   emoji?: string;
 }
 
 function Header({
   children,
-  underlineColor,
+  underlineColor = '',
   emoji,
   ...props
 }: PropsWithChildren<Props>) {

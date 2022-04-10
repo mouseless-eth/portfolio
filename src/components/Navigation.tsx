@@ -32,9 +32,9 @@ const routes = [
 function Navigation() {
   return (
     <Routes>
-      {routes.map((route, idx) => (
+      {routes.map((route) => (
         <Route
-          key={idx}
+          key={route.toString()}
           exact={route.exact}
           path={route.path}
           element={<route.component />}

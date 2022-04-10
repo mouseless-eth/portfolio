@@ -47,7 +47,12 @@ interface NavLinkProps {
   onClose: () => void;
 }
 
-function NavLink({ index, name, path, onClose }: NavLinkProps) {
+function NavLink({
+  index, // eslint-disable-line @typescript-eslint/no-unused-vars
+  name,
+  path,
+  onClose,
+}: NavLinkProps) {
   return (
     <Link
       as={RouterNavLink}
@@ -108,9 +113,9 @@ function TopNav() {
             spacing={4}
             display={{ base: 'none', md: 'flex' }}
           >
-            {webLinks.map((link, index) => (
+            {webLinks.map((link) => (
               <NavLink
-                key={index}
+                key={link.toString()}
                 name={link.name}
                 path={link.path}
                 onClose={onClose}
@@ -211,9 +216,9 @@ function TopNav() {
           display={['inherit', 'inherit', 'none']}
         >
           <Stack as="nav" spacing={4}>
-            {mobileLinks.map((link, index) => (
+            {mobileLinks.map((link) => (
               <NavLink
-                index={index}
+                index={link.toString()}
                 name={link.name}
                 path={link.path}
                 onClose={onClose}
