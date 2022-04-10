@@ -6,12 +6,13 @@ import Ganache from '../assets/techstack/ganache.png';
 import Ethersjs from '../assets/techstack/ethersjs.png';
 import FlashBots from '../assets/techstack/flashbots.png';
 import Solidity from '../assets/techstack/solidity.png';
+import Linux from '../assets/techstack/linux.png';
+import Vim from '../assets/techstack/vim.png';
 
 export interface Skill {
   name: string,
   description: string,
   link: string,
-  type: string,
   image: string,
 }
 
@@ -20,57 +21,61 @@ const techstack: Skill[] = [
     name: 'HardHat',
     description: 'EVM dev environment',
     link: 'https://hardhat.org/',
-    type: 'web3',
     image: HardHat,
   },
   {
     name: 'React',
     description: 'Frontend UI library',
     link: 'https://reactjs.org/',
-    type: 'web2',
     image: React,
   },
   {
     name: 'Ethersjs',
     description: 'Blockchain interaction',
     link: 'https://docs.ethers.io/v5/',
-    type: 'web3',
     image: Ethersjs,
   },
   {
     name: 'Solidity',
     description: 'Smart contract scripting',
     link: 'https://docs.soliditylang.org/en/v0.8.13/',
-    type: 'web3',
     image: Solidity,
   },
   {
     name: 'Ganache',
     description: 'Local blockchain for testing',
     link: 'https://trufflesuite.com/docs/ganache/',
-    type: 'web3',
     image: Ganache,
   },
   {
     name: 'FlashBots',
     description: 'Send private txs to miners',
     link: 'https://docs.flashbots.net/',
-    type: 'web3',
     image: FlashBots,
   },
   {
     name: 'TypeScript',
-    description: 'Web development scripting',
+    description: 'Web dev scripting',
     link: 'https://www.typescriptlang.org/',
-    type: 'web2',
     image: TypeScript,
   },
   {
     name: 'JavaScript',
-    description: 'Web development scripting',
+    description: 'Web dev scripting',
     link: 'https://www.javascript.com/',
-    type: 'web2',
     image: JavaScript,
+  },
+  {
+    name: 'Linux',
+    description: 'My daily driver OS',
+    link: 'https://www.javascript.com://archlinux.org/',
+    image: Linux,
+  },
+  {
+    name: 'Vim',
+    description: 'Text editor of choice',
+    link: 'https://www.vim.org/',
+    image: Vim,
   },
 ];
 
