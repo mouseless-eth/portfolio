@@ -24,7 +24,7 @@ import { BiChevronDown } from 'react-icons/bi';
 import { BsCheckCircle, BsBook } from 'react-icons/bs';
 import { MdTimeline } from 'react-icons/md';
 import { AiOutlineClose, AiTwotoneThunderbolt } from 'react-icons/ai';
-import { ColorModeSwitcher } from './ColorModeSwitcher';
+import ColorModeSwitcher from './ColorModeSwitcher';
 import UserIcon from '../assets/images/user_icon.png';
 
 const webLinks = [
