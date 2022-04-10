@@ -11,19 +11,16 @@ import Web3 from '../pages/web3';
 const routes = [
   {
     path: '/',
-    exact: true,
     name: 'Home',
     component: Home,
   },
   {
     path: '/web2',
-    exact: true,
     name: 'About',
     component: Web2,
   },
   {
     path: '/web3',
-    exact: true,
     name: 'Achievements',
     component: Web3,
   },
@@ -35,7 +32,6 @@ function Navigation() {
       {routes.map((route) => (
         <Route
           key={route.toString()}
-          exact={route.exact}
           path={route.path}
           element={<route.component />}
         />

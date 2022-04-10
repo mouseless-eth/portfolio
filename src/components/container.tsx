@@ -1,7 +1,7 @@
 import React from 'react';
 import { Box } from '@chakra-ui/react';
 
-function Container(props) {
+function Container(props: any) {
   return (
     <Box
       textAlign="center"

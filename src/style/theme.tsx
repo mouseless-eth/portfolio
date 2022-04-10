@@ -8,7 +8,7 @@ export const theme = extendTheme({
     body: "'Red Hat Text', sans-serif",
   },
   styles: {
-    global: (props) => ({
+    global: (props: any) => ({
       body: {
         color: mode('gray.700', 'whiteAlpha.900')(props),
         bg: mode('gray.50', 'gray.900')(props),
@@ -54,7 +54,7 @@ export const theme = extendTheme({
     // },
     Popover: {
       parts: ['popper'],
-      baseStyle: (props) => ({
+      baseStyle: (props: any) => ({
         popper: {
           zIndex: 10,
           maxW: 'xs',
@@ -178,7 +178,7 @@ export const theme = extendTheme({
   },
 });
 
-export const getTagColor = type => {
+export const getTagColor = (type: any) => {
   type = type.toLowerCase()
   if (type === 'rails' || type === 'ruby') {
     return 'red';

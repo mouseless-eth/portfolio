@@ -23,7 +23,7 @@ function Home() {
   return (
     <PageSlideFade>
       <VStack spacing={8}>
-        <Section>
+        <Section full={false}>
           <VStack>
             <Header mt={0} mb={1}>
               My Web3 Techstack & Tools
@@ -39,7 +39,7 @@ function Home() {
             </Text>
           </VStack>
         </Section>
-        <Section>
+        <Section full={false}>
           <MotionBox
             variants={container}
             initial="hidden"
@@ -48,7 +48,7 @@ function Home() {
             <SimpleGrid columns={[1, 1, 2]} spacing={4} mt={8}>
               {techstackList.map((tool: Skill) => (
                 <SkillCard
-                  key={tool}
+                  key={tool.toString()}
                   name={tool.name}
                   description={tool.description}
                   image={tool.image}

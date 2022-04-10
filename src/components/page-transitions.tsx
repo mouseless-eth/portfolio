@@ -56,11 +56,11 @@ export const item = {
   },
 };
 
-export function PageSlideFade({ children }) {
+export function PageSlideFade({ children }: any) {
   return <SlideFade in>{children}</SlideFade>;
 }
 
-export function StaggerChildren({ children }) {
+export function StaggerChildren({ children }: any) {
   return (
     <MotionBox
       animate={{
@@ -74,6 +74,6 @@ export function StaggerChildren({ children }) {
   );
 }
 
-export function CardTransition({ children }) {
+export function CardTransition({ children }: any) {
   return <MotionBox variants={variants}>{children}</MotionBox>;
 }
