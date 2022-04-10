@@ -1,6 +1,9 @@
 import * as React from 'react';
 import { useState } from 'react';
 import {
+  HStack,
+  Button,
+  Badge,
   VStack,
   Text,
   useColorModeValue,
@@ -22,7 +25,50 @@ function Home() {
 
   return (
     <PageSlideFade>
-      <VStack spacing={8}>
+      <VStack spacing={6}>
+        <Section full={false}>
+          <Header
+            underlineColor="gray.300"
+            mt={0}
+            color="gray.700"
+          >
+            Hey! 👋
+          </Header>
+          <Text>
+            I&apos;m William, a 20 year old dev without a mouse that loves to
+            {' '}
+            <Badge bg="teal.50" variant="outline">
+              Learn
+            </Badge>
+            ,
+            {' '}
+            <Badge bg="teal.50" variant="outline">
+              Build
+            </Badge>
+            , and
+            {' '}
+            <Badge bg="teal.50" variant="outline">
+              Experiment
+            </Badge>
+          </Text>
+        </Section>
+        <HStack
+          spacing="6"
+          justifyContent="center"
+        >
+          <Button
+            colorScheme="teal"
+            variant="solid"
+          >
+            Web3 Projects
+          </Button>
+          <Button
+            colorScheme="teal"
+            variant="solid"
+          >
+            Web2 Projects
+          </Button>
+        </HStack>
         <Section full={false}>
           <VStack>
             <Header mt={0} mb={1}>
@@ -34,8 +80,8 @@ function Home() {
               maxW="lg"
               textAlign="center"
             >
-              A list of tools and technologies that I use on a
-              regular basis when creating Web3 solutions.
+              tools and technologies that I use on a
+              regular basis when creating Web3 solutions
             </Text>
           </VStack>
         </Section>
