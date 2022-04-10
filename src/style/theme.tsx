@@ -1,5 +1,6 @@
+/* eslint-disable */
 import { extendTheme } from '@chakra-ui/react';
-import { mode } from '@chakra-ui/theme-tools'
+import { mode } from '@chakra-ui/theme-tools';
 
 export const theme = extendTheme({
   fonts: {
@@ -53,7 +54,7 @@ export const theme = extendTheme({
     // },
     Popover: {
       parts: ['popper'],
-      baseStyle: props => ({
+      baseStyle: (props) => ({
         popper: {
           zIndex: 10,
           maxW: 'xs',
@@ -177,7 +178,6 @@ export const theme = extendTheme({
   },
 });
 
-/* eslint-disable */
 export const getTagColor = type => {
   type = type.toLowerCase()
   if (type === 'rails' || type === 'ruby') {
@@ -192,4 +192,3 @@ export const getTagColor = type => {
     return 'teal';
   }
 };
-/* eslint-enable */
