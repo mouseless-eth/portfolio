@@ -6,6 +6,7 @@ import Ganache from '../assets/techstack/ganache.png';
 import Ethersjs from '../assets/techstack/ethersjs.png';
 import FlashBots from '../assets/techstack/flashbots.png';
 import Solidity from '../assets/techstack/solidity.png';
+import Chakra from '../assets/techstack/chakraui.png';
 import Linux from '../assets/techstack/linux.png';
 import Vim from '../assets/techstack/vim.png';
 
@@ -66,8 +67,14 @@ const techstack: Skill[] = [
     image: JavaScript,
   },
   {
+    name: 'Chakra UI',
+    description: 'Component library for ui',
+    link: 'https://chakra-ui.com/',
+    image: Chakra,
+  },
+  {
     name: 'Linux',
-    description: 'My daily driver OS',
+    description: 'My os daily driver',
     link: 'https://www.javascript.com://archlinux.org/',
     image: Linux,
   },

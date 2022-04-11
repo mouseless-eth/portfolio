@@ -52,23 +52,26 @@ function Home() {
             </Badge>
           </Text>
         </Section>
-        <HStack
-          spacing="6"
-          justifyContent="center"
-        >
-          <Button
-            colorScheme="teal"
-            variant="solid"
+        <Section full={false}>
+          Follow my progress into becoming a fullstack Web3 developer
+          <HStack
+            spacing="6"
+            justifyContent="center"
           >
-            Web3 Projects
-          </Button>
-          <Button
-            colorScheme="teal"
-            variant="solid"
-          >
-            Web2 Projects
-          </Button>
-        </HStack>
+            <Button
+              colorScheme="teal"
+              variant="solid"
+            >
+              Web3 Projects
+            </Button>
+            <Button
+              colorScheme="teal"
+              variant="solid"
+            >
+              Web2 Projects
+            </Button>
+          </HStack>
+        </Section>
         <Section full={false}>
           <VStack>
             <Header mt={0} mb={1}>
