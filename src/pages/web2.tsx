@@ -1,13 +1,23 @@
 import * as React from 'react';
 import {
-  VStack,
+  SimpleGrid,
 } from '@chakra-ui/react';
+import web2 from '../data/web2Portfolio';
+import Work from '../components/work';
 
 function Web2() {
   return (
-    <VStack>
-      Hello Web2
-    </VStack>
+    <SimpleGrid columns={[1, 1, 2]} spacing={4} mt={8}>
+      {web2.map((project) => (
+        <Work
+          key={project.toString()}
+          title={project.title}
+          description={project.description}
+          image={project.image}
+          badges={project.badges}
+        />
+      ))}
+    </SimpleGrid>
   );
 }
 
