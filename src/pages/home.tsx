@@ -1,6 +1,8 @@
 import * as React from 'react';
 import { useState } from 'react';
 import {
+  Link,
+  Divider,
   HStack,
   Button,
   Badge,
@@ -9,6 +11,9 @@ import {
   useColorModeValue,
   SimpleGrid,
 } from '@chakra-ui/react';
+import { CgChevronDown as DownArrow } from 'react-icons/cg';
+import { IconContext } from 'react-icons';
+import { NavLink } from 'react-router-dom';
 import techstack, { Skill } from '../data/techstack';
 import SkillCard from '../components/skill-card';
 import Section from '../components/section';
@@ -16,6 +21,7 @@ import { PageSlideFade, container } from '../components/page-transitions';
 import Header from '../components/header';
 import { MotionBox } from '../components/motion';
 
+/* eslint-disable react/jsx-no-constructed-context-values */
 function Home() {
   const [techstackList, setSkillsList] = useState<Skill[] | []>([]);
 
@@ -35,7 +41,7 @@ function Home() {
             Hey! 👋
           </Header>
           <Text>
-            I&apos;m William, a 20 year old dev without a mouse that loves to
+            I&apos;m William, a 20 year old dev that loves to
             {' '}
             <Badge bg="teal.50" variant="outline">
               Learn
@@ -53,24 +59,46 @@ function Home() {
           </Text>
         </Section>
         <Section full={false}>
-          Follow my progress into becoming a fullstack Web3 developer
-          <HStack
-            spacing="6"
-            justifyContent="center"
-          >
-            <Button
-              colorScheme="teal"
-              variant="solid"
+          <VStack mt={5}>
+            <Text>
+              Follow my progress towards becoming a
+              {' '}
+              <Text as="mark" bg="green.50">Fullstack Web3 Developer</Text>
+            </Text>
+            <IconContext.Provider
+              value={{
+                color: 'teal',
+                size: '3rem',
+              }}
             >
-              Web3 Projects
-            </Button>
-            <Button
-              colorScheme="teal"
-              variant="solid"
+              <DownArrow />
+            </IconContext.Provider>
+            <HStack
+              spacing="6"
+              justifyContent="center"
             >
-              Web2 Projects
-            </Button>
-          </HStack>
+              <Button
+                colorScheme="teal"
+                variant="solid"
+                size="lg"
+              >
+                Web3 Projects
+              </Button>
+              <Button
+                colorScheme="teal"
+                variant="solid"
+                size="lg"
+              >
+                <Link
+                  as={NavLink}
+                  to="/web2"
+                >
+                  Web2 Projects
+                </Link>
+              </Button>
+            </HStack>
+          </VStack>
+          <Divider mt={8} />
         </Section>
         <Section full={false}>
           <VStack>
@@ -83,7 +111,7 @@ function Home() {
               maxW="lg"
               textAlign="center"
             >
-              tools and technologies that I use on a
+              Tools and technologies that I use on a
               regular basis when creating Web3 solutions
             </Text>
           </VStack>
