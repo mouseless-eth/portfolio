@@ -16,12 +16,12 @@ const routes = [
   },
   {
     path: '/web2',
-    name: 'About',
+    name: 'Web2 Projects',
     component: Web2,
   },
   {
     path: '/web3',
-    name: 'Achievements',
+    name: 'Web3 Projects',
     component: Web3,
   },
 ];

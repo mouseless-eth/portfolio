@@ -1,6 +1,7 @@
 import * as React from 'react';
 import {
   Box,
+  Text,
   Flex,
   Avatar,
   HStack,
@@ -90,20 +91,7 @@ function TopNav() {
               src={UserIcon}
             />
           </Box>
-          <HStack
-            as="nav"
-            spacing={3}
-            display={{ base: 'none', md: 'flex' }}
-          >
-            {webLinks.map((link) => (
-              <NavLink
-                key={link.toString()}
-                name={link.name}
-                path={link.path}
-                onClose={onClose}
-              />
-            ))}
-          </HStack>
+          <Text color="gray.500">MouseLess.eth</Text>
         </HStack>
         <Flex alignItems="center">
           <IconButton
