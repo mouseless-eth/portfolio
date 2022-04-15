@@ -18,14 +18,14 @@ interface Project {
 const web2: Project[] = [
   {
     title: 'Pixel Fiat',
-    description: 'Mobile incremental app where players collect pixel money',
+    description: 'Mobile incremental app where players progress by collecting pixel money',
     badges: [cSharp, unity, google, apple],
     image: PixelFiat,
   },
   {
     title: 'Memorize Pi',
-    description: 'Mobile app to help users remember the digits of π',
-    badges: [cSharp, unity, google],
+    description: 'Mobile app to help users remember the digits of π through a minimalist interface',
+    badges: [cSharp, unity, apple, google],
     image: Pi,
   },
 ];

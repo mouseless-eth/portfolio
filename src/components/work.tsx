@@ -22,7 +22,14 @@ function work({
   badges,
 }: WorkProps) {
   return (
-    <Box p="5" rounded="lg" bg="whiteAlpha.300">
+    <Box
+      p="4"
+      rounded="lg"
+      bg="whiteAlpha.900"
+      boxShadow="base"
+      // @ts-expect-error
+      align="center"
+    >
       <Box maxW="sm">
         <Image
           src={image}
@@ -30,26 +37,33 @@ function work({
           rounded="lg"
         />
       </Box>
-      <Box p="5">
+      <Box pt={4}>
         <Text
           fontSize="2xl"
           fontWeight="bold"
+          color="blackAlpha.900"
         >
           {title}
         </Text>
         <Text
           fontSize="sm"
           align="center"
+          color="blackAlpha.800"
         >
           {description}
         </Text>
         <Wrap
           mt={3}
+          justify="center"
           shouldWrapChildren
         >
           {
             badges.map((badge: BadgeDescription) => (
-              <Badge fontSize="12px" colorScheme={badge.colorScheme}>
+              <Badge
+                fontSize="12px"
+                colorScheme={badge.colorScheme}
+                color="blackAlpha.700"
+              >
                 {badge.name}
               </Badge>
             ))
