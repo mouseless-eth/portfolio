@@ -1,6 +1,7 @@
 import PixelFiat from '../assets/work/web2/pixelfiat.png';
 import Pi from '../assets/work/web2/pi.png';
 import InstagramBot from '../assets/work/web2/instagrambot.png';
+import Portfolio from '../assets/work/web2/portfolio.png';
 import BadgeDescription,
 {
   cSharp,
@@ -36,6 +37,12 @@ const web2: Project[] = [
     description: 'Headless bot that posts daily with unique captions and gains followers + farms engagement',
     badges: [python3, selenium],
     image: InstagramBot,
+  },
+  {
+    title: 'This Portfolio Site',
+    description: 'This site that you are currently browsing was made by me using react and a minimal starting template',
+    badges: [python3, selenium],
+    image: Portfolio,
   },
 ];
 
