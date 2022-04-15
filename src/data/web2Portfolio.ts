@@ -10,6 +10,8 @@ import BadgeDescription,
   apple,
   selenium,
   python3,
+  typeScript,
+  react,
 } from './badges';
 
 interface Project {
@@ -40,8 +42,8 @@ const web2: Project[] = [
   },
   {
     title: 'This Portfolio Site',
-    description: 'This site that you are currently browsing was made by me using react and a minimal starting template',
-    badges: [python3, selenium],
+    description: 'The site that you are currently browsing was made by myself using react and a minimal starting template',
+    badges: [react, typeScript],
     image: Portfolio,
   },
 ];

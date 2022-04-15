@@ -21,9 +21,17 @@ export const google = {
 };
 export const python3 = {
   name: 'Python3',
-  colorScheme: 'twitter',
+  colorScheme: 'facebook',
 };
 export const selenium = {
   name: 'Selenium',
   colorScheme: 'gray',
+};
+export const react = {
+  name: 'React',
+  colorScheme: 'linkedin',
+};
+export const typeScript = {
+  name: 'TypeScript',
+  colorScheme: 'pink',
 };
