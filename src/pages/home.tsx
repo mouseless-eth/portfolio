@@ -37,8 +37,9 @@ function Home() {
             underlineColor="gray.300"
             mt={0}
             color="gray.700"
+            emoji="👋"
           >
-            Hey! 👋
+            Hey!
           </Header>
           <Text>
             I&apos;m William, a 20 year old dev that loves to
