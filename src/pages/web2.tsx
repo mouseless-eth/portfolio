@@ -7,7 +7,7 @@ import Work from '../components/work';
 
 function Web2() {
   return (
-    <SimpleGrid columns={[1, 1, 2]} spacing={4} mt={8}>
+    <SimpleGrid columns={[1, 1, 2]} spacing={5} mt={8}>
       {web2.map((project) => (
         <Work
           key={project.toString()}

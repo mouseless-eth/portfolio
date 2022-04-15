@@ -19,3 +19,11 @@ export const google = {
   name: 'Google PlayStore',
   colorScheme: 'purple',
 };
+export const python3 = {
+  name: 'Python3',
+  colorScheme: 'twitter',
+};
+export const selenium = {
+  name: 'Selenium',
+  colorScheme: 'gray',
+};
