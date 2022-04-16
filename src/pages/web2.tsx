@@ -14,13 +14,14 @@ function Web2() {
       <Header
         underlineColor="gray.300"
         mt={0}
-        color="gray.700"
+        color="blackAlpha.800"
       >
         Web2 Projects
       </Header>
       <Text
         fontSize="md"
         textAlign="left"
+        color="gray.700"
       >
         A selection of Web2 projects and solutions that I have worked on
       </Text>
