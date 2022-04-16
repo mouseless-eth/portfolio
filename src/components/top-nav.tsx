@@ -22,11 +22,11 @@ import { GiHamburgerMenu } from 'react-icons/gi';
 import {
   FaGithub,
   FaTwitter,
-  FaNetworkWired,
   FaEthereum,
 } from 'react-icons/fa';
 import { AiOutlineClose } from 'react-icons/ai';
 import { BiChevronDown } from 'react-icons/bi';
+import { MdWeb } from 'react-icons/md';
 import ColorModeSwitcher from './ColorModeSwitcher';
 import UserIcon from '../assets/images/user_icon.png';
 
@@ -162,7 +162,7 @@ function TopNav() {
                   <MenuItem>
                     <HStack>
                       <Icon
-                        as={FaNetworkWired}
+                        as={MdWeb}
                         size={15}
                         color={useColorModeValue('blue.500', 'blue.200')}
                       />
