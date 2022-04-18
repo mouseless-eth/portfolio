@@ -3,9 +3,9 @@ export default interface BadgeDescription {
   colorScheme: string,
 }
 
-export const cSharp = {
+export const csharp = {
   name: 'C#',
-  colorScheme: 'teal',
+  colorScheme: 'linkedin',
 };
 export const unity = {
   name: 'unity',
@@ -29,9 +29,33 @@ export const selenium = {
 };
 export const react = {
   name: 'React',
-  colorScheme: 'linkedin',
+  colorScheme: 'teal',
 };
-export const typeScript = {
+export const typescript = {
   name: 'TypeScript',
   colorScheme: 'pink',
+};
+export const flashbots = {
+  name: 'FlashBots',
+  colorScheme: 'green',
+};
+export const ganache = {
+  name: 'Ganache',
+  colorScheme: 'orange',
+};
+export const hardhat = {
+  name: 'HardHat',
+  colorScheme: 'yellow',
+};
+export const solidity = {
+  name: 'Solidity',
+  colorScheme: 'facebook',
+};
+export const ethersjs = {
+  name: 'EthersJs',
+  colorScheme: 'blue',
+};
+export const javascript = {
+  name: 'JavaScript',
+  colorScheme: 'yellow',
 };
