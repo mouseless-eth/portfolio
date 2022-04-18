@@ -4,34 +4,34 @@ import InstagramBot from '../assets/work/web2/instagrambot.png';
 import Portfolio from '../assets/work/web2/portfolio.png';
 import BadgeDescription,
 {
-  cSharp,
+  csharp,
   unity,
   google,
   apple,
   selenium,
   python3,
-  typeScript,
+  typescript,
   react,
 } from './badges';
 
-interface Project {
+interface Web2Project {
   title: string,
   description: string,
   badges: BadgeDescription[],
   image: string,
 }
 
-const web2: Project[] = [
+const web2: Web2Project[] = [
   {
     title: 'Pixel Fiat',
     description: 'Mobile incremental app where players progress by collecting pixel money',
-    badges: [cSharp, unity, google, apple],
+    badges: [csharp, unity, google, apple],
     image: PixelFiat,
   },
   {
     title: 'Memorize Pi',
     description: 'Mobile app to help users remember the digits of π through a minimalist interface',
-    badges: [cSharp, unity, apple, google],
+    badges: [csharp, unity, apple, google],
     image: Pi,
   },
   {
@@ -43,7 +43,7 @@ const web2: Project[] = [
   {
     title: 'This Portfolio Site',
     description: 'The site that you are currently browsing was made by myself using react and a minimal starting template',
-    badges: [react, typeScript],
+    badges: [react, typescript],
     image: Portfolio,
   },
 ];
