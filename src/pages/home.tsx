@@ -83,7 +83,12 @@ function Home() {
                 variant="solid"
                 size="lg"
               >
-                Web3 Projects
+                <Link
+                  as={NavLink}
+                  to="/web3"
+                >
+                  Web3 Projects
+                </Link>
               </Button>
               <Button
                 colorScheme="teal"
