@@ -5,10 +5,12 @@ import {
 } from '@chakra-ui/react';
 import Section from '../components/section';
 import Header from '../components/header';
-import web3 from '../data/web3Portfolio';
-import Work from '../components/work';
+import Web3Project, { web3 } from '../data/web3Portfolio';
+import Web3Work from '../components/web3work';
 
 function Web3() {
+  const web3Projects = web3 as Web3Project[];
+
   return (
     <Section full={false}>
       <Header
@@ -23,16 +25,13 @@ function Web3() {
         textAlign="left"
         color="gray.700"
       >
-        A selection of Web3 projects and solutions that I have worked on
+        A selection of Web3 projects and solutions that I have worked on.
       </Text>
       <SimpleGrid columns={[1, 1, 2]} spacing={5} mt={8}>
-        {web3.map((project) => (
-          <Work
+        {web3Projects.map((project) => (
+          <Web3Work
             key={project.toString()}
-            title={project.title}
-            description={project.description}
-            image={project.image}
-            badges={project.badges}
+            project={project}
           />
         ))}
       </SimpleGrid>

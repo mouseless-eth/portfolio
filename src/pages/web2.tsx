@@ -5,10 +5,11 @@ import {
 } from '@chakra-ui/react';
 import Section from '../components/section';
 import Header from '../components/header';
-import web2 from '../data/web2Portfolio';
-import Work from '../components/work';
+import Web2Project, { web2 } from '../data/web2Portfolio';
+import Web2Work from '../components/web2work';
 
 function Web2() {
+  const web2Projects = web2 as Web2Project[];
   return (
     <Section full={false}>
       <Header
@@ -26,13 +27,10 @@ function Web2() {
         A selection of Web2 projects and solutions that I have worked on
       </Text>
       <SimpleGrid columns={[1, 1, 2]} spacing={5} mt={8}>
-        {web2.map((project) => (
-          <Work
+        {web2Projects.map((project) => (
+          <Web2Work
             key={project.toString()}
-            title={project.title}
-            description={project.description}
-            image={project.image}
-            badges={project.badges}
+            project={project}
           />
         ))}
       </SimpleGrid>
