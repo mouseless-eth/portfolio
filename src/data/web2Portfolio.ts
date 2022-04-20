@@ -14,14 +14,14 @@ import BadgeDescription,
   react,
 } from './badges';
 
-interface Web2Project {
+export default interface Web2Project {
   title: string,
   description: string,
   badges: BadgeDescription[],
   image: string,
 }
 
-const web2: Web2Project[] = [
+export const web2: Web2Project[] = [
   {
     title: 'Pixel Fiat',
     description: 'Mobile incremental app where players progress by collecting pixel money',
@@ -47,5 +47,3 @@ const web2: Web2Project[] = [
     image: Portfolio,
   },
 ];
-
-export default web2;
