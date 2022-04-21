@@ -108,6 +108,7 @@ function TopNav() {
               size="sm"
               href="/"
               src={UserIcon}
+              display={['none', 'inherit', 'inherit']}
             />
           </Box>
           <Text
