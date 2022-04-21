@@ -94,7 +94,7 @@ function TopNav() {
         maxW={800}
         mx="auto"
       >
-        <HStack spacing={8} alignItems="center">
+        <HStack spacing={4} alignItems="center">
           <IconButton
             size="md"
             icon={isOpen ? <AiOutlineClose /> : <GiHamburgerMenu />}
@@ -108,7 +108,6 @@ function TopNav() {
               size="sm"
               href="/"
               src={UserIcon}
-              display={['none', 'inherit', 'inherit']}
             />
           </Box>
           <Text
