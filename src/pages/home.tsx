@@ -110,7 +110,11 @@ function Home() {
         </Section>
         <Section full={false}>
           <VStack>
-            <Header mt={0} mb={1}>
+            <Header
+              mt={0}
+              mb={1}
+              textAlign="center"
+            >
               My Web3 Techstack & Tools
             </Header>
             <Text
