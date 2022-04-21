@@ -85,6 +85,7 @@ function Home() {
               >
                 <Link
                   as={NavLink}
+                  _hover={{ color: 'teal.100' }}
                   to="/web3"
                 >
                   Web3 Projects
@@ -97,6 +98,7 @@ function Home() {
               >
                 <Link
                   as={NavLink}
+                  _hover={{ color: 'teal.100' }}
                   to="/web2"
                 >
                   Web2 Projects

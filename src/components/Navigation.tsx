@@ -6,6 +6,7 @@ import {
 import Home from '../pages/home';
 import Web2 from '../pages/web2';
 import Web3 from '../pages/web3';
+import About from '../pages/about';
 
 const routes = [
   {
@@ -22,6 +23,11 @@ const routes = [
     path: '/web3',
     name: 'Web3 Projects',
     component: Web3,
+  },
+  {
+    path: '/about',
+    name: 'About',
+    component: About,
   },
 ];
 
