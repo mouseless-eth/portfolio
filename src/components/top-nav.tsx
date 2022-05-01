@@ -190,7 +190,7 @@ function TopNav() {
           />
           <IconButton
             as={Link}
-            href="https://github.com/0xMouseLess"
+            href="https://github.com/mouseless-eth"
             size="md"
             icon={<FaGithub />}
             aria-label="Github account"
