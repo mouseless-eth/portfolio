@@ -66,7 +66,7 @@ export const web3: Web3Project[] = [
     description: 'WebApp that produces clean reports of a user\'s NFT based on it\'s metadata',
     badges: [react, typescript, ethersjs],
     statuses: [opensource, inprogress],
-    repoLink: 'https://github.com/0xMouseLess/Listing-Sniping-Bot',
+    repoLink: 'https://github.com/mouseless-eth/doodles-profile',
     image: NftSummary,
   },
 ];

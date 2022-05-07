@@ -6,12 +6,12 @@ import {
 import { FiMail } from 'react-icons/fi';
 
 const siteConfig = {
-  copyright: `Copyright © ${new Date().getFullYear()} Muhammad Ahmad. All Rights Reserved.`,
+  copyright: `Copyright © ${new Date().getFullYear()} 0xMouseLess. All Rights Reserved.`,
   author: {
     name: 'Muhammad Ahmad',
     accounts: [
       {
-        url: 'https://github.com/0xMouseLess',
+        url: 'https://github.com/mouseless-eth',
         label: 'Github Account',
         type: 'gray',
         icon: <FaGithub />,
