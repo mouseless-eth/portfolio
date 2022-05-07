@@ -9,6 +9,7 @@ import Solidity from '../assets/techstack/solidity.png';
 import Chakra from '../assets/techstack/chakraui.png';
 import Linux from '../assets/techstack/linux.png';
 import Vim from '../assets/techstack/vim.png';
+import Foundry from '../assets/techstack/foundry.png';
 
 export interface Skill {
   name: string,
@@ -18,6 +19,12 @@ export interface Skill {
 }
 
 const techstack: Skill[] = [
+  {
+    name: 'Foundry',
+    description: 'Smartcontract dev toolchain',
+    link: 'https://book.getfoundry.sh/index.html',
+    image: Foundry,
+  },
   {
     name: 'HardHat',
     description: 'EVM dev environment',
