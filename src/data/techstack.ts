@@ -75,7 +75,7 @@ const techstack: Skill[] = [
   {
     name: 'Linux',
     description: 'My os daily driver',
-    link: 'https://www.javascript.com://archlinux.org/',
+    link: 'https://www.archlinux.org/',
     image: Linux,
   },
   {
