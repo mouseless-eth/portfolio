@@ -21,7 +21,7 @@ export interface Skill {
 const techstack: Skill[] = [
   {
     name: 'Foundry',
-    description: 'Smartcontract dev toolchain',
+    description: 'Smart contract dev tools',
     link: 'https://book.getfoundry.sh/index.html',
     image: Foundry,
   },
