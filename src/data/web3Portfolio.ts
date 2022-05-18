@@ -3,6 +3,7 @@ import IcoSniperV1 from '../assets/work/web3/icosniperv1.png';
 import IcoSniperV2 from '../assets/work/web3/icosniperv2.png';
 import MassMinting from '../assets/work/web3/massminting.png';
 import FlashBotsRecovery from '../assets/work/web3/flashbotsrecovery.png';
+import FlashClaim from '../assets/work/web3/flashclaim.png';
 import BadgeDescription,
 {
   typescript,
@@ -13,6 +14,7 @@ import BadgeDescription,
   javascript,
   solidity,
   react,
+  foundry,
 } from './badges';
 import StatusDescription,
 {
@@ -32,12 +34,19 @@ export default interface Web3Project {
 
 export const web3: Web3Project[] = [
   {
-    title: 'Recovering $44k with FlashBots',
+    title: 'Recovering $44k With FlashBots',
     description: 'Beating a wallet draining bot to recover $44k of unclaimed vested ICO tokens',
     badges: [flashbots, javascript, ethersjs],
     statuses: [opensource],
     repoLink: 'https://github.com/0xMouseLess/Flashbots-Recovery',
     image: FlashBotsRecovery,
+  },
+  {
+    title: 'Flash Claim NFT Pools',
+    description: 'Long tail MEV strategy to flashclaim NFT liquidity pools to claim airdrops',
+    badges: [flashbots, solidity, foundry, javascript, ethersjs],
+    statuses: [privaterepo],
+    image: FlashClaim,
   },
   {
     title: 'ICO Sniping Bot v1',

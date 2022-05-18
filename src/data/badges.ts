@@ -59,3 +59,7 @@ export const javascript = {
   name: 'JavaScript',
   colorScheme: 'yellow',
 };
+export const foundry = {
+  name: 'Foundry',
+  colorScheme: 'orange',
+};
