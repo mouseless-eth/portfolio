@@ -1,15 +1,18 @@
-import * as React from 'react';
 import {
   SimpleGrid,
   Text,
+  VStack,
 } from '@chakra-ui/react';
 import Section from '../components/section';
 import Header from '../components/header';
 import Web3Project, { web3 } from '../data/web3Portfolio';
 import Web3Work from '../components/web3work';
+import WrittenWork, { posts } from '../data/writtenWork';
+import Post from '../components/post';
 
 function Web3() {
   const web3Projects = web3 as Web3Project[];
+  const writtenWork = posts as WrittenWork[];
 
   return (
     <Section full={false}>
@@ -35,6 +38,30 @@ function Web3() {
           />
         ))}
       </SimpleGrid>
+      <Header
+        justifyContent="center"
+        underlineColor="gray.300"
+        mt={10}
+        color="blackAlpha.800"
+      >
+        Blogs, Articles, Writeups
+      </Header>
+      <Text
+        fontSize="md"
+        textAlign="left"
+        color="gray.700"
+      >
+        Written work where I explore various areas in the web3 and blockchain space
+      </Text>
+      <VStack mt={5}>
+        {writtenWork.map((post) => (
+          <Post
+            title={post.title}
+            description={post.description}
+            link={post.link}
+          />
+        ))}
+      </VStack>
     </Section>
   );
 }
