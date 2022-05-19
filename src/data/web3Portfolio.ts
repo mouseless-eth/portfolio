@@ -35,7 +35,7 @@ export default interface Web3Project {
 export const web3: Web3Project[] = [
   {
     title: 'Recovering $44k With FlashBots',
-    description: 'Beating a wallet draining bot to recover $44k of unclaimed vested ICO tokens',
+    description: 'Beating a wallet sweeping bot to recover $44k of unclaimed vested ICO tokens',
     badges: [flashbots, javascript, ethersjs],
     statuses: [opensource],
     repoLink: 'https://github.com/0xMouseLess/Flashbots-Recovery',
