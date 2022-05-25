@@ -42,7 +42,7 @@ export const web3: Web3Project[] = [
     image: FlashBotsRecovery,
   },
   {
-    title: 'Flash Claim NFT Pools',
+    title: 'NFT Flash Claim',
     description: 'Long tail MEV strategy to claim airdrops by flash claiming NFT pools',
     badges: [flashbots, solidity, foundry, javascript, ethersjs],
     statuses: [privaterepo],
