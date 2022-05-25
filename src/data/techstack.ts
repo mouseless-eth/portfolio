@@ -25,12 +25,12 @@ const techstack: Skill[] = [
     link: 'https://book.getfoundry.sh/index.html',
     image: Foundry,
   },
-  {
-    name: 'HardHat',
-    description: 'EVM dev environment',
-    link: 'https://hardhat.org/',
-    image: HardHat,
-  },
+  //{
+  //  name: 'HardHat',
+  //  description: 'EVM dev environment',
+  //  link: 'https://hardhat.org/',
+  //  image: HardHat,
+  //},
   {
     name: 'React',
     description: 'Frontend UI library',
@@ -49,12 +49,12 @@ const techstack: Skill[] = [
     link: 'https://docs.soliditylang.org/en/v0.8.13/',
     image: Solidity,
   },
-  {
-    name: 'Ganache',
-    description: 'Local blockchain for testing',
-    link: 'https://trufflesuite.com/docs/ganache/',
-    image: Ganache,
-  },
+  //{
+  //  name: 'Ganache',
+  //  description: 'Local blockchain for testing',
+  //  link: 'https://trufflesuite.com/docs/ganache/',
+  //  image: Ganache,
+  //},
   {
     name: 'FlashBots',
     description: 'Send private txs to miners',
@@ -67,12 +67,12 @@ const techstack: Skill[] = [
     link: 'https://www.typescriptlang.org/',
     image: TypeScript,
   },
-  {
-    name: 'JavaScript',
-    description: 'Web dev scripting',
-    link: 'https://www.javascript.com/',
-    image: JavaScript,
-  },
+  //{
+  //  name: 'JavaScript',
+  //  description: 'Web dev scripting',
+  //  link: 'https://www.javascript.com/',
+  //  image: JavaScript,
+  //},
   {
     name: 'Chakra UI',
     description: 'Component library for ui',
