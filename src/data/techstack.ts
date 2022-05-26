@@ -10,6 +10,7 @@ import Chakra from '../assets/techstack/chakraui.png';
 import Linux from '../assets/techstack/linux.png';
 import Vim from '../assets/techstack/vim.png';
 import Foundry from '../assets/techstack/foundry.png';
+import Rust from '../assets/techstack/rust.png';
 
 export interface Skill {
   name: string,
@@ -66,6 +67,12 @@ const techstack: Skill[] = [
     description: 'Frontend UI library',
     link: 'https://reactjs.org/',
     image: React,
+  },
+  {
+    name: 'Rust (actively learning)',
+    description: 'Blazingly fast & memory-efficient',
+    link: 'https://www.rust-lang.org/',
+    image: Rust,
   },
   // {
   //   name: 'JavaScript',
