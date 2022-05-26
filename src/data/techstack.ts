@@ -38,10 +38,10 @@ const techstack: Skill[] = [
     image: Solidity,
   },
   {
-    name: 'TypeScript',
-    description: 'Web dev scripting',
-    link: 'https://www.typescriptlang.org/',
-    image: TypeScript,
+    name: 'Ethersjs',
+    description: 'Blockchain interaction',
+    link: 'https://docs.ethers.io/v5/',
+    image: Ethersjs,
   },
   {
     name: 'FlashBots',
@@ -50,10 +50,10 @@ const techstack: Skill[] = [
     image: FlashBots,
   },
   {
-    name: 'Ethersjs',
-    description: 'Blockchain interaction',
-    link: 'https://docs.ethers.io/v5/',
-    image: Ethersjs,
+    name: 'TypeScript',
+    description: 'Web dev scripting',
+    link: 'https://www.typescriptlang.org/',
+    image: TypeScript,
   },
   // {
   //   name: 'Ganache',
@@ -75,7 +75,7 @@ const techstack: Skill[] = [
   // },
   {
     name: 'Chakra UI',
-    description: 'Component library for ui',
+    description: 'UI Component library',
     link: 'https://chakra-ui.com/',
     image: Chakra,
   },
