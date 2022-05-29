@@ -45,7 +45,7 @@ export const ganache = {
 };
 export const hardhat = {
   name: 'HardHat',
-  colorScheme: 'yellow',
+  colorScheme: 'purple',
 };
 export const solidity = {
   name: 'Solidity',

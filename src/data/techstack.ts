@@ -70,7 +70,7 @@ const techstack: Skill[] = [
   },
   {
     name: 'Rust (actively learning)',
-    description: 'Blazingly fast & memory-efficient',
+    description: 'Blazingly fast scripting',
     link: 'https://www.rust-lang.org/',
     image: Rust,
   },
