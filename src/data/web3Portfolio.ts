@@ -46,6 +46,7 @@ export const web3: Web3Project[] = [
     description: 'Long tail MEV strategy to claim airdrops by flash claiming NFT pools',
     badges: [flashbots, solidity, foundry, javascript, ethersjs],
     statuses: [privaterepo],
+    repoLink: 'https://mirror.xyz/0x0000000000098341a924BD53454654A0dBBc4e43/KaJH_F5cZ76Yspi_oPhn0qP9WAcEm0ouZLxPjSJbEy4',
     image: FlashClaim,
   },
   {
