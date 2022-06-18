@@ -8,7 +8,7 @@ import { FiMail } from 'react-icons/fi';
 const siteConfig = {
   copyright: `Copyright © ${new Date().getFullYear()} 0xMouseLess. All Rights Reserved.`,
   author: {
-    name: 'Muhammad Ahmad',
+    name: '0xMouseLess',
     accounts: [
       {
         url: 'https://github.com/mouseless-eth',
@@ -31,5 +31,8 @@ const siteConfig = {
     ],
   },
 };
+
+export const twitterHandle = '0xMouseLessDev';
+export const githubHandle = 'MouseLess-eth';
 
 export default siteConfig;

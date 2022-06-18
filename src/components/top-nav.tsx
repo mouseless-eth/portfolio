@@ -29,6 +29,10 @@ import { BiChevronDown } from 'react-icons/bi';
 import { MdWeb } from 'react-icons/md';
 import ColorModeSwitcher from './ColorModeSwitcher';
 import UserIcon from '../assets/images/user_icon.png';
+import {
+  twitterHandle,
+  githubHandle,
+} from '../configs/site-config';
 
 const webLinks = [
   { name: 'Home', path: '/' },
@@ -177,7 +181,7 @@ function TopNav() {
         <Flex alignItems="center">
           <IconButton
             as={Link}
-            href="https://twitter.com/0xMouseLessDev"
+            href={`https://twitter.com/${twitterHandle}`}
             size="md"
             icon={<FaTwitter />}
             aria-label="Twitter account"
@@ -190,7 +194,7 @@ function TopNav() {
           />
           <IconButton
             as={Link}
-            href="https://github.com/mouseless-eth"
+            href={`https://github.com/${githubHandle}`}
             size="md"
             icon={<FaGithub />}
             aria-label="Github account"
