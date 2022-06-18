@@ -4,6 +4,7 @@ import IcoSniperV1 from '../assets/work/web3/icosniperv1.png';
 import MassMinting from '../assets/work/web3/massminting.png';
 import FlashBotsRecovery from '../assets/work/web3/flashbotsrecovery.png';
 import FlashClaim from '../assets/work/web3/flashclaim.png';
+import BuidlGuild from '../assets/work/web3/buidlguild.png';
 import BadgeDescription,
 {
   typescript,
@@ -60,7 +61,7 @@ export const web3: Web3Project[] = [
   {
     title: 'ICO Sniping Bot',
     description: 'Monitoring and buying a token as soon as liquidity is added on a DEX',
-    badges: [hardhat, ethersjs, ganache, javascript],
+    badges: [ethersjs, ganache, javascript],
     statuses: [opensource],
     repoLink: 'https://github.com/0xMouseLess/Listing-Sniping-Bot',
     image: IcoSniperV1,
@@ -72,6 +73,14 @@ export const web3: Web3Project[] = [
   //   statuses: [privaterepo],
   //   image: IcoSniperV2,
   // },
+  {
+    title: 'BuidlGuild',
+    description: "Community of buidlers creating projects using scaffold-eth's dev stack",
+    badges: [ethersjs, react, hardhat],
+    statuses: [opensource],
+    repoLink: 'https://buidlguidl.com/builders/0x0000000000098341a924BD53454654A0dBBc4e43',
+    image: BuidlGuild,
+  },
   {
     title: 'NFT summary creator',
     description: 'WebApp that produces clean reports of a user\'s NFT based on it\'s metadata',

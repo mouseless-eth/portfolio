@@ -11,4 +11,10 @@ export const posts: WrittenWork[] = [
                   using only the foundry toolchain consiting of the tools Cast and Forge.`,
     link: 'https://mouseless-eth.gitbook.io/speed-running-ethernaut-with-foundry/',
   },
+  {
+    title: 'How To Flash Claim NFTX Vaults To Redeem Airdrops',
+    description: `Breakdown of a long tail MEV strategy where Flash 
+                  Loans are utilized to redeem nfts from nftx vaults so that they can be used to redeem airdrops`,
+    link: 'https://mirror.xyz/dashboard/edit/KaJH_F5cZ76Yspi_oPhn0qP9WAcEm0ouZLxPjSJbEy4',
+  },
 ];
