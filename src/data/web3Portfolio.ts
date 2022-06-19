@@ -74,7 +74,7 @@ export const web3: Web3Project[] = [
   //   image: IcoSniperV2,
   // },
   {
-    title: 'BuidlGuild',
+    title: 'Builder in BuidlGuild',
     description: "Community of buidlers creating projects using scaffold-eth's dev stack",
     badges: [ethersjs, react, hardhat],
     statuses: [opensource],
