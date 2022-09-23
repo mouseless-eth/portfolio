@@ -36,7 +36,7 @@ function About() {
             self-learn from various docs/writeups & niche videos to optimize my bot further.
           </Text>
           <Text fontSize="lg" align="left">
-            before this I was a crypto native DeFi degen and would use my student support grants to
+            Before this I was a crypto native DeFi degen and would use my student support grants to
             ape into various protocols and Dapps. The support granted to students is not a huge
             sum, so all of my onchain activity was through interacting with forks
             of Ethereum projects hosted on BSC as I could not afford the ETH
@@ -45,7 +45,7 @@ function About() {
           </Text>
 
           <Text fontSize="lg" align="left">
-            after the 10 weeks of running my minting bot,
+            After the 10 weeks of running my minting bot,
             I had accumilated enough capital to finally move all of
             my onchain activity onto the Ethereum mainnet.
             And since my move,
