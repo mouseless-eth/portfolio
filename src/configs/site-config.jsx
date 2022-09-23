@@ -6,7 +6,7 @@ import {
 import { FiMail } from 'react-icons/fi';
 
 const siteConfig = {
-  copyright: `Copyright © ${new Date().getFullYear()} 0xMouseLess. All Rights Reserved.`,
+  copyright: `Copyright © ${new Date().getFullYear()} MouseLess. All Rights Reserved.`,
   author: {
     name: '0xMouseLess',
     accounts: [
@@ -17,7 +17,7 @@ const siteConfig = {
         icon: <FaGithub />,
       },
       {
-        url: 'https://twitter.com/0xMouseLessDev',
+        url: 'https://twitter.com/inukecode',
         label: 'Twitter Account',
         type: 'twitter',
         icon: <FaTwitter />,
@@ -32,7 +32,7 @@ const siteConfig = {
   },
 };
 
-export const twitterHandle = '0xMouseLessDev';
+export const twitterHandle = 'inukecode';
 export const githubHandle = 'MouseLess-eth';
 
 export default siteConfig;
