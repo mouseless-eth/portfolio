@@ -46,7 +46,7 @@ const techstack: Skill[] = [
   },
   {
     name: 'FlashBots',
-    description: 'Send private txs to miners',
+    description: 'Democratized MEV relay',
     link: 'https://docs.flashbots.net/',
     image: FlashBots,
   },
@@ -69,7 +69,7 @@ const techstack: Skill[] = [
     image: React,
   },
   {
-    name: 'Rust (actively learning)',
+    name: 'Rust',
     description: 'Blazingly fast scripting',
     link: 'https://www.rust-lang.org/',
     image: Rust,
