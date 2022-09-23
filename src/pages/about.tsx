@@ -38,7 +38,7 @@ function About() {
           <Text fontSize="lg" align="left">
             before this I was a crypto native DeFi degen and would use my student support grants to
             ape into various protocols and Dapps. The support granted to students is not a huge
-            sum, all of my onchain activity was through interacting with forks
+            sum, so all of my onchain activity was through interacting with forks
             of Ethereum projects hosted on BSC as I could not afford the ETH
             gas fees during the peak of defi summer
             given how often I would make transactions to experiment with trendy protocols.
