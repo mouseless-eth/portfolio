@@ -46,7 +46,7 @@ function About() {
 
           <Text fontSize="lg" align="left">
             after the 10 weeks of running my minting bot,
-            I had enough capital to finally move all of
+            I had accumilated enough capital to finally move all of
             my onchain activity onto the Ethereum mainnet.
             And since my move,
             <Text as="b" color="blue.500">
