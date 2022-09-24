@@ -22,7 +22,7 @@ function About() {
           <Text fontSize="lg" align="left">
             Funnily enough, my web3 dev journey started when my NFT
             got stuck on an escrow contract because the
-            devs forgot to add a UI withdraw button. I saved my NFT by running a
+            devs forgot to add a withdraw button on their frontend. I saved my NFT by running a
             sketchy ethersjs script off an anon I met on discord.
             I then realized that I could
             interact with the blockchain directly through code and wrote an NFT minting
@@ -33,15 +33,15 @@ function About() {
             after school, run it on the weekend,
             and then repeat. During this period,
             I gained a deep respect and understanding of the EVM, as I had to
-            self-learn from various docs/writeups & niche videos to optimize my bot further.
+            self-learn from various docs/writeups & niche videos to improve my bot further.
           </Text>
           <Text fontSize="lg" align="left">
             Before this I was a crypto native DeFi degen and would use my student support grants to
             ape into various protocols and Dapps. The support granted to students is not a huge
-            sum, so all of my onchain activity was through interacting with forks
+            sum, so all of my onchain activity was through experimenting with forks
             of Ethereum projects hosted on BSC as I could not afford the ETH
             gas fees during the peak of defi summer
-            given how often I would make transactions to experiment with trendy protocols.
+            given how often I would sign transactions.
           </Text>
 
           <Text fontSize="lg" align="left">
@@ -64,7 +64,7 @@ function About() {
             and countless hours of writing tests in local forked mainnet instances.
           </Text>
           <Text fontSize="lg" align="left">
-            Moving forward, I plan to move away from bot development,
+            Moving forward, I plan to step away from bot development and the MEV space,
             and I am currently working on transferring the
             knowledge and skills I gained and putting them toward Dapp development.
             I want to build software that people use.
