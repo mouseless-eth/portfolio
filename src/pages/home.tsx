@@ -42,7 +42,7 @@ function Home() {
             Hey!
           </Header>
           <Text>
-            I&apos;m William, a 20 year old dev that loves to
+            I&apos;m William, a 21 year old dev that loves to
             {' '}
             <Badge bg="teal.50" variant="outline">
               Learn
