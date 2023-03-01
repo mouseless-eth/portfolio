@@ -17,7 +17,7 @@ const siteConfig = {
         icon: <FaGithub />,
       },
       {
-        url: 'https://twitter.com/inukecode',
+        url: 'https://twitter.com/0xmouseless',
         label: 'Twitter Account',
         type: 'twitter',
         icon: <FaTwitter />,
@@ -32,7 +32,7 @@ const siteConfig = {
   },
 };
 
-export const twitterHandle = 'inukecode';
+export const twitterHandle = '0xmouseless';
 export const githubHandle = 'MouseLess-eth';
 
 export default siteConfig;
