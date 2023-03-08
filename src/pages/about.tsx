@@ -16,7 +16,7 @@ function About() {
     <Section full={false}>
       <VStack mt={5}>
         <Heading color="blue.500">
-          Journey into Web3
+          Journey Into Web3
         </Heading>
         <VStack spacing={5}>
           <Text fontSize="lg" align="left">
