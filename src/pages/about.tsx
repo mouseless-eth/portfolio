@@ -60,7 +60,7 @@ function About() {
             Implementing my long-tail bots directly exposed
             me to the full stack of EVM development as I had to work with understanding
             contracts down to their bytecode,
-            how to ensure my transaction would end up in a specific block,
+            how to propagate my txs across the network faster,
             and countless hours of writing tests in local forked mainnet instances.
           </Text>
           <Text fontSize="lg" align="left">
