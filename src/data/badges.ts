@@ -33,15 +33,11 @@ export const react = {
 };
 export const typescript = {
   name: 'TypeScript',
-  colorScheme: 'pink',
+  colorScheme: 'blue',
 };
 export const flashbots = {
   name: 'FlashBots',
-  colorScheme: 'green',
-};
-export const ganache = {
-  name: 'Ganache',
-  colorScheme: 'orange',
+  colorScheme: 'teal',
 };
 export const hardhat = {
   name: 'HardHat',
@@ -51,15 +47,19 @@ export const solidity = {
   name: 'Solidity',
   colorScheme: 'facebook',
 };
-export const ethersjs = {
-  name: 'EthersJs',
-  colorScheme: 'blue',
-};
 export const javascript = {
   name: 'JavaScript',
   colorScheme: 'yellow',
 };
 export const foundry = {
   name: 'Foundry',
+  colorScheme: 'pink',
+};
+export const rust = {
+  name: 'Rust',
   colorScheme: 'orange',
+};
+export const huff = {
+  name: 'Huff',
+  colorScheme: 'gray',
 };

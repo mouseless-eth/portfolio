@@ -7,8 +7,8 @@ export const opensource = {
   name: 'Open Source',
   colorScheme: 'green',
 };
-export const inprogress = {
-  name: '(In Progress)',
+export const writeup = {
+  name: '(Write Up)',
   colorScheme: 'orange',
 };
 export const privaterepo = {
