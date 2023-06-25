@@ -3,14 +3,15 @@ import React from '../assets/techstack/react.png';
 import TypeScript from '../assets/techstack/typescript.png';
 // import JavaScript from '../assets/techstack/javascript.png';
 // import Ganache from '../assets/techstack/ganache.png';
-import Ethersjs from '../assets/techstack/ethersjs.png';
+// import Ethersjs from '../assets/techstack/ethersjs.png';
 import FlashBots from '../assets/techstack/flashbots.png';
 import Solidity from '../assets/techstack/solidity.png';
 import Chakra from '../assets/techstack/chakraui.png';
 import Linux from '../assets/techstack/linux.png';
-import Vim from '../assets/techstack/vim.png';
+import NeoVim from '../assets/techstack/neovim.png';
 import Foundry from '../assets/techstack/foundry.png';
 import Rust from '../assets/techstack/rust.png';
+import Huff from '../assets/techstack/huff.png';
 
 export interface Skill {
   name: string,
@@ -33,28 +34,40 @@ const techstack: Skill[] = [
   //   image: HardHat,
   // },
   {
+    name: 'Rust',
+    description: 'Blazingly fast scripting',
+    link: 'https://www.rust-lang.org/',
+    image: Rust,
+  },
+  {
     name: 'Solidity',
     description: 'Smart contract scripting',
     link: 'https://docs.soliditylang.org/en/v0.8.13/',
     image: Solidity,
   },
+  // {
+  //   name: 'Ethersjs',
+  //   description: 'Blockchain interaction',
+  //   link: 'https://docs.ethers.io/v5/',
+  //   image: Ethersjs,
+  // },
   {
-    name: 'Ethersjs',
-    description: 'Blockchain interaction',
-    link: 'https://docs.ethers.io/v5/',
-    image: Ethersjs,
+    name: 'TypeScript',
+    description: 'Web dev scripting',
+    link: 'https://www.typescriptlang.org/',
+    image: TypeScript,
+  },
+  {
+    name: 'Huff',
+    description: 'Low level EVM scripting',
+    link: 'https://huff.sh/',
+    image: Huff,
   },
   {
     name: 'FlashBots',
     description: 'Democratized MEV relay',
     link: 'https://docs.flashbots.net/',
     image: FlashBots,
-  },
-  {
-    name: 'TypeScript',
-    description: 'Web dev scripting',
-    link: 'https://www.typescriptlang.org/',
-    image: TypeScript,
   },
   // {
   //   name: 'Ganache',
@@ -67,12 +80,6 @@ const techstack: Skill[] = [
     description: 'Frontend UI library',
     link: 'https://reactjs.org/',
     image: React,
-  },
-  {
-    name: 'Rust',
-    description: 'Blazingly fast scripting',
-    link: 'https://www.rust-lang.org/',
-    image: Rust,
   },
   // {
   //   name: 'JavaScript',
@@ -93,10 +100,10 @@ const techstack: Skill[] = [
     image: Linux,
   },
   {
-    name: 'Vim',
+    name: 'NeoVim',
     description: 'Text editor of choice',
-    link: 'https://www.vim.org/',
-    image: Vim,
+    link: 'https://neovim.io/',
+    image: NeoVim,
   },
 ];
 
