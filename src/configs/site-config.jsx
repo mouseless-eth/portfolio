@@ -1,4 +1,3 @@
-import React from 'react';
 import {
   FaGithub,
   FaTwitter,
@@ -6,7 +5,7 @@ import {
 import { FiMail } from 'react-icons/fi';
 
 const siteConfig = {
-  copyright: `Copyright © ${new Date().getFullYear()} MouseLess. All Rights Reserved.`,
+  copyright: `Copyright © ${new Date().getFullYear()} 0xMouseLess. All Rights Reserved.`,
   author: {
     name: '0xMouseLess',
     accounts: [
@@ -23,7 +22,7 @@ const siteConfig = {
         icon: <FaTwitter />,
       },
       {
-        url: 'mailto:maximus.holm@gmail.com',
+        url: 'mailto:0xmouseless@gmail.com',
         label: 'Email',
         type: 'gray',
         icon: <FiMail />,
