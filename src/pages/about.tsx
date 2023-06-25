@@ -51,7 +51,7 @@ function About() {
             And since my move,
             <Text as="b" color="blue.500">
               {' '}
-              I have extracted a little over 6 figures (USD)
+              I have extracted over 6 figures (USD)
               through capturing Long-Tail MEV strategies.
               {' '}
             </Text>

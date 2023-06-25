@@ -1,4 +1,5 @@
-import NftSummary from '../assets/work/web3/nftsummary.png';
+import RustySando from '../assets/work/web3/rustysando.png';
+import Ctf from '../assets/work/web3/ctf.png';
 import IcoSniperV1 from '../assets/work/web3/icosniperv1.png';
 // import IcoSniperV2 from '../assets/work/web3/icosniperv2.png';
 import MassMinting from '../assets/work/web3/massminting.png';
@@ -9,19 +10,19 @@ import BadgeDescription,
 {
   typescript,
   flashbots,
-  ganache,
-  ethersjs,
   javascript,
   hardhat,
   solidity,
   react,
   foundry,
+  huff,
+  rust,
 } from './badges';
 import StatusDescription,
 {
-  inprogress,
   privaterepo,
   opensource,
+  writeup,
 } from './status';
 
 export default interface Web3Project {
@@ -35,20 +36,28 @@ export default interface Web3Project {
 
 export const web3: Web3Project[] = [
   {
-    title: 'Recovering $44k With FlashBots',
-    description: 'Beating a wallet sweeping bot to recover $44k of unclaimed vested ICO tokens',
-    badges: [flashbots, javascript, ethersjs],
+    title: 'Rusty Sando',
+    description: 'Competitive V2/V3 and multi-meat mev sandwich bot',
+    badges: [rust, flashbots, huff, solidity, foundry],
     statuses: [opensource],
-    repoLink: 'https://github.com/0xMouseLess/Flashbots-Recovery',
-    image: FlashBotsRecovery,
+    repoLink: 'https://github.com/mouseless-eth/rusty-sando/tree/master/bot',
+    image: RustySando,
   },
   {
     title: 'NFT Flash Claim',
     description: 'Long tail MEV strategy to claim airdrops by flash claiming NFT pools',
-    badges: [flashbots, solidity, foundry, javascript, ethersjs],
-    statuses: [privaterepo],
+    badges: [flashbots, solidity, foundry, javascript],
+    statuses: [privaterepo, writeup],
     repoLink: 'https://mirror.xyz/0x0000000000098341a924BD53454654A0dBBc4e43/KaJH_F5cZ76Yspi_oPhn0qP9WAcEm0ouZLxPjSJbEy4',
     image: FlashClaim,
+  },
+  {
+    title: 'Flashbots Rescue',
+    description: 'Beating a wallet sweeping bot to recover $44k of unclaimed vested ICO tokens',
+    badges: [flashbots, javascript],
+    statuses: [opensource],
+    repoLink: 'https://github.com/mouseless-eth/Flashbots-Recovery',
+    image: FlashBotsRecovery,
   },
   {
     title: 'Mass Minting NFTs',
@@ -61,32 +70,25 @@ export const web3: Web3Project[] = [
   {
     title: 'ICO Sniping Bot',
     description: 'Monitoring and buying a token as soon as liquidity is added on a DEX',
-    badges: [ethersjs, ganache, javascript],
+    badges: [javascript],
     statuses: [opensource],
-    repoLink: 'https://github.com/0xMouseLess/Listing-Sniping-Bot',
+    repoLink: 'https://github.com/mouseless-eth/Listing-Sniping-Bot',
     image: IcoSniperV1,
   },
-  // {
-  //   title: 'ICO Sniping Bot v2',
-  //   description:'Implementing 1Inch\'s Router to v1 bot so now it works on all chains+exchanges',
-  //   badges: [ethersjs, ganache, javascript, flashbots],
-  //   statuses: [privaterepo],
-  //   image: IcoSniperV2,
-  // },
   {
     title: 'Builder in BuidlGuild',
     description: "Community of buidlers creating projects using scaffold-eth's dev stack",
-    badges: [ethersjs, react, hardhat],
+    badges: [react, hardhat],
     statuses: [opensource],
     repoLink: 'https://buidlguidl.com/builders/0x0000000000098341a924BD53454654A0dBBc4e43',
     image: BuidlGuild,
   },
   {
-    title: 'NFT summary creator',
-    description: 'WebApp that produces clean reports of a user\'s NFT based on it\'s metadata',
-    badges: [react, typescript, ethersjs],
-    statuses: [opensource, inprogress],
-    repoLink: 'https://github.com/mouseless-eth/doodles-profile',
-    image: NftSummary,
+    title: 'Ethernaut Writeup',
+    description: 'Speed Running OpenZeppelin\'s Etherenaut CTF using only Foundry',
+    badges: [react, typescript],
+    statuses: [opensource, writeup],
+    repoLink: 'https://mouseless-eth.gitbook.io/speed-running-ethernaut-with-foundry/',
+    image: Ctf,
   },
 ];
