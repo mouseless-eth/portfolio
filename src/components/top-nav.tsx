@@ -27,7 +27,7 @@ import {
 import { AiOutlineClose } from 'react-icons/ai';
 import { BiChevronDown } from 'react-icons/bi';
 import { MdWeb } from 'react-icons/md';
-import ColorModeSwitcher from './ColorModeSwitcher';
+// import ColorModeSwitcher from './ColorModeSwitcher';
 import UserIcon from '../assets/images/user_icon.png';
 import {
   twitterHandle,
@@ -181,19 +181,6 @@ function TopNav() {
         <Flex alignItems="center">
           <IconButton
             as={Link}
-            href={`https://twitter.com/${twitterHandle}`}
-            size="md"
-            icon={<FaTwitter />}
-            aria-label="Twitter account"
-            bg={useColorModeValue('white', 'gray.700')}
-            _hover={{
-              textDecoration: 'none',
-              bg: useColorModeValue('gray.200', 'gray.900'),
-            }}
-            target="_blank"
-          />
-          <IconButton
-            as={Link}
             href={`https://github.com/${githubHandle}`}
             size="md"
             icon={<FaGithub />}
@@ -205,7 +192,20 @@ function TopNav() {
             }}
             target="_blank"
           />
-          <ColorModeSwitcher justifySelf="flex-end" />
+          <IconButton
+            as={Link}
+            href={`https://twitter.com/${twitterHandle}`}
+            size="md"
+            icon={<FaTwitter />}
+            aria-label="Twitter account"
+            bg={useColorModeValue('white', 'gray.700')}
+            _hover={{
+              textDecoration: 'none',
+              bg: useColorModeValue('gray.200', 'gray.900'),
+            }}
+            target="_blank"
+          />
+          { /* <ColorModeSwitcher justifySelf="flex-end" /> */}
         </Flex>
       </Flex>
       {isOpen ? (
