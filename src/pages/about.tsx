@@ -39,9 +39,7 @@ function About() {
             Before this I was a crypto native DeFi degen and would use my student support grants to
             ape into various protocols and Dapps. The support granted to students is not a huge
             sum, so all of my onchain activity was through experimenting with forks
-            of Ethereum projects hosted on BSC as I could not afford the ETH
-            gas fees during the peak of defi summer
-            given how often I would sign transactions.
+            of Ethereum projects hosted on BSC.
           </Text>
 
           <Text fontSize="lg" align="left">

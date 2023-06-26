@@ -86,7 +86,7 @@ export const web3: Web3Project[] = [
   {
     title: 'Ethernaut Writeup',
     description: 'Speed Running OpenZeppelin\'s Etherenaut CTF using only Foundry',
-    badges: [react, typescript],
+    badges: [foundry, solidity, typescript],
     statuses: [opensource, writeup],
     repoLink: 'https://mouseless-eth.gitbook.io/speed-running-ethernaut-with-foundry/',
     image: Ctf,
