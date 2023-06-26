@@ -65,7 +65,7 @@ const techstack: Skill[] = [
   },
   {
     name: 'FlashBots',
-    description: 'Democratized MEV relay',
+    description: 'Democratized MEV',
     link: 'https://docs.flashbots.net/',
     image: FlashBots,
   },
