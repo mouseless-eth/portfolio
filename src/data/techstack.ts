@@ -95,13 +95,13 @@ const techstack: Skill[] = [
   },
   {
     name: 'Linux',
-    description: 'My os daily driver',
+    description: 'Daily driver os',
     link: 'https://www.archlinux.org/',
     image: Linux,
   },
   {
     name: 'NeoVim',
-    description: 'Text editor of choice',
+    description: 'Code editor of choice',
     link: 'https://neovim.io/',
     image: NeoVim,
   },
