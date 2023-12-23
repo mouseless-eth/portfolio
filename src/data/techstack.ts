@@ -95,7 +95,7 @@ const techstack: Skill[] = [
   },
   {
     name: 'Nixos',
-    description: 'go-to flavor of linux',
+    description: 'favourite linux flavor',
     link: 'https://nixos.org/',
     image: NixOS,
   },

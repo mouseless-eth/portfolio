@@ -130,7 +130,7 @@ function Home() {
               textAlign="center"
             >
               Tools and technologies that I use on a
-              regular basis when creating web3 solutions
+              regular basis when creating web3 solutions.
             </Text>
           </VStack>
         </Section>
