@@ -57,14 +57,20 @@ function Home() {
             <Badge bg="teal.50" variant="outline">
               Experiment
             </Badge>
+            .
           </Text>
         </Section>
         <Section full={false}>
           <VStack mt={5}>
             <Text>
-              Follow my progress towards becoming a
+              Follow my progress towards becoming a true
               {' '}
-              <Text as="mark" bg="green.50">Fullstack Web3 Developer</Text>
+              <Text as="mark" bg="green.100">
+                <Link href="https://decrypt.co/76997/elizabeth-warren-crypto-big-banks-shadowy-super-coders" isExternal>
+                  shadowy super-coder
+                </Link>
+                .
+              </Text>
             </Text>
             <IconContext.Provider
               value={{
@@ -115,7 +121,7 @@ function Home() {
               mb={1}
               textAlign="center"
             >
-              My Web3 Techstack & Tools
+              Techstack & Tools
             </Header>
             <Text
               fontSize="xl"
@@ -124,7 +130,7 @@ function Home() {
               textAlign="center"
             >
               Tools and technologies that I use on a
-              regular basis when creating Web3 solutions
+              regular basis when creating web3 solutions
             </Text>
           </VStack>
         </Section>

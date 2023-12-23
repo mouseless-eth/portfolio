@@ -97,7 +97,6 @@ function Frame({ project }: Props) {
 
 function Work({ project }: Props) {
   const { repoLink } = project;
-  console.log(project);
   return (
     repoLink
       ? (

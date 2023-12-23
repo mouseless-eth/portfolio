@@ -44,7 +44,7 @@ function Footer() {
           ©
           {new Date().getFullYear()}
           {' '}
-          MouseLess
+          0xmouseless
         </Text>
         <Box textAlign="center">
           {siteConfig.author.accounts.map((sc) => (

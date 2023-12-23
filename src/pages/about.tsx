@@ -22,7 +22,7 @@ function About() {
           <Text fontSize="lg" align="left">
             Funnily enough, my web3 dev journey started when my NFT
             got stuck on an escrow contract because the
-            devs forgot to add a withdraw button on their frontend. I saved my NFT by running a
+            devs forgot to add a withdraw button to their frontend. I saved my NFT by running a
             sketchy ethersjs script off an anon I met on discord.
             I then realized that I could
             interact with the blockchain directly through code and wrote an NFT minting
@@ -44,18 +44,18 @@ function About() {
 
           <Text fontSize="lg" align="left">
             After the 10 weeks of running my minting bot,
-            I had accumilated enough capital to finally move all of
+            I had accumulated enough capital to finally move all of
             my onchain activity onto the Ethereum mainnet.
             And since my move,
             <Text as="b" color="blue.500">
               {' '}
               I have extracted over 6 figures (USD)
-              through capturing Long-Tail MEV strategies.
+              through capturing various MEV strategies.
               {' '}
             </Text>
           </Text>
           <Text fontSize="lg" align="left">
-            Implementing my long-tail bots directly exposed
+            Implementing my bots directly exposed
             me to the full stack of EVM development as I had to work with understanding
             contracts down to their bytecode,
             how to propagate my txs across the network faster,
@@ -64,12 +64,12 @@ function About() {
           <Text fontSize="lg" align="left">
             Moving forward, I plan to step away from bot development and the MEV space,
             and I am currently working on transferring the
-            knowledge and skills I gained and putting them toward Dapp development.
-            I want to build software that people use.
+            knowledge and skills I gained and putting them toward bettering the ecosystem.
+            I want to build software that people use and benefit from.
           </Text>
           <Text fontSize="lg" align="left">
             I believe that society as a whole will benefit from a decentralized
-            digital future and I want to be here BUIDLING when mass adoption hits.
+            digital future and I want to be here BUIDLING for mass adoption to hit.
           </Text>
         </VStack>
         <Heading mt={15}>

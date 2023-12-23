@@ -40,7 +40,7 @@ export const web3: Web3Project[] = [
     description: 'Competitive V2/V3 and multi-meat mev sandwich bot',
     badges: [rust, flashbots, huff, solidity, foundry],
     statuses: [opensource],
-    repoLink: 'https://github.com/mouseless-eth/rusty-sando/tree/master/bot',
+    repoLink: 'https://github.com/mouseless-eth/rusty-sando',
     image: RustySando,
   },
   {

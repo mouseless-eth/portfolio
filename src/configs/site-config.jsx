@@ -7,7 +7,7 @@ import { FiMail } from 'react-icons/fi';
 const siteConfig = {
   copyright: `Copyright © ${new Date().getFullYear()} 0xMouseLess. All Rights Reserved.`,
   author: {
-    name: '0xMouseLess',
+    name: '0xmouseless',
     accounts: [
       {
         url: 'https://github.com/mouseless-eth',
@@ -32,6 +32,6 @@ const siteConfig = {
 };
 
 export const twitterHandle = '0xmouseless';
-export const githubHandle = 'MouseLess-eth';
+export const githubHandle = 'mouseless-eth';
 
 export default siteConfig;

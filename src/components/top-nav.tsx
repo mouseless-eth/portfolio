@@ -118,11 +118,11 @@ function TopNav() {
             color="gray.500"
             display={['inherit', 'inherit', 'none']}
           >
-            MouseLess.eth
+            0xmouseless
           </Text>
           <HStack
             as="nav"
-            spacing={4}
+            spacing={1}
             display={{ base: 'none', md: 'flex' }}
           >
             {webLinks.map((link) => (
@@ -138,7 +138,6 @@ function TopNav() {
                 as={Button}
                 variant="ghost"
                 size="sm"
-                px={2}
                 py={1.5}
                 fontSize="1em"
                 height="auto"

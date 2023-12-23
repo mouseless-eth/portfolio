@@ -9,7 +9,7 @@ function App() {
     <ChakraProvider theme={theme}>
       <Helmet>
         <meta charSet="utf-8" />
-        <title>0xMouseLess</title>
+        <title>0xmouseless</title>
         <meta name="description" content="Developer portfolio using react and chakra-ui" />
       </Helmet>
       <Layout />

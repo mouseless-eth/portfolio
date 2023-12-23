@@ -1,4 +1,4 @@
-import React from 'react';
+import { useEffect, useState } from 'react';
 import {
   HStack,
   VStack,
@@ -9,7 +9,7 @@ import {
   Image,
   Skeleton,
 } from '@chakra-ui/react';
-import { usePalette } from 'react-palette';
+import { getColors } from 'react-native-image-colors';
 import { MotionBox } from './motion';
 import { item } from './page-transitions';
 
@@ -26,7 +26,14 @@ function SkillCard({
   link,
   description,
 }: SkillCardProps) {
-  const { data, loading } = usePalette(image);
+  const [colors, setColors] = useState<string>('#ffffff');
+
+  useEffect(() => {
+    getColors(image).then((color) => {
+      const selectedColor = color.platform === 'android' || color.platform === 'web' ? color.lightVibrant : color.primary;
+      setColors(selectedColor);
+    });
+  }, []);
 
   return (
     <MotionBox variants={item}>
@@ -53,7 +60,7 @@ function SkillCard({
               boxShadow="inset 0 0 1px 1px rgba(0, 0, 0, 0.015)"
             >
               <Box
-                bg={data.lightVibrant}
+                bg={colors}
                 position="absolute"
                 top={0}
                 bottom={0}
@@ -63,7 +70,7 @@ function SkillCard({
               >
                 {' '}
               </Box>
-              {loading ? (
+              {colors === '#ffffff' ? (
                 <Skeleton height={26} width={26} rounded="md" />
               ) : (
                 <Image
